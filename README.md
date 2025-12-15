@@ -3,6 +3,6 @@ Sistema web usando React que imita um sistema de gerenciamento de pedidos de um 
 
 
 
-para executar, instalar as dependências no backend com o camando "npm intall"
+para executar, instalar as dependências no backend com o camando "npm install"
 no front precisa executar "yarn install"
 
