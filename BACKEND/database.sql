@@ -69,8 +69,6 @@ CHECK (
     (id_acompanhamento IS NOT NULL AND qtd_acompanhamento > 0 AND id_alimento IS NULL AND qtd_alimento IS NULL)
 );
 
-
-
 -- ===============================
 -- USUÁRIOS
 -- ===============================
@@ -94,4 +92,6 @@ INSERT INTO acompanhamento (nome, descricao, valor) VALUES
 ('Batata Frita', 'Porção média de batata frita', 8.00),
 ('Refrigerante', 'Lata 350ml', 5.00),
 ('Molho Extra', 'Molho especial da casa', 2.50);
+
+
 
