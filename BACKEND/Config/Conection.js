@@ -3,7 +3,7 @@ const { Sequelize } = require("sequelize");
 const sequelize = new Sequelize({
     host: "localhost",
     port: 5432,
-    database: "PEDIDOS_RESTAURANTE", 
+    database: "RESTAURANTE_TESTE", 
     username: "postgres",
     password: "98376162",
     dialect: "postgres",
@@ -14,7 +14,7 @@ const sequelize = new Sequelize({
 async function conectaBancoDeDados() {
     try {
         await sequelize.authenticate();
-        console.log('✅ Sequelize conectado ao PostgreSQL com sucesso!');
+        console.log('Sequelize conectado ao PostgreSQL com sucesso!');
     } catch (error) {
         console.error('ERRO: Sequelize não conseguiu conectar ao banco:', error);
     }

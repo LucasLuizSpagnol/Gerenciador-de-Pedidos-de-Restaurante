@@ -39,8 +39,7 @@ const deletarPedido = async () => {
         return;
     }
 
-    // Use 'PENDENTE' ou o status que sua API retorna quando o pedido não foi processado.
-    const statusPendente = "Pendente";
+    const statusPendente = "PENDENTE";
     
     if (statusVerificado.toUpperCase().includes(statusPendente)) {
 
@@ -89,7 +88,6 @@ const verificarStatus = async () => {
     try {
         const responseData = await obterStatusPedido(pedidoConcluido);
         
-        // 🚨 NOVO LOG: Veja o que a API está realmente retornando
         console.log("Resposta da API de Status:", responseData);
         
         let novoStatus;
@@ -110,7 +108,7 @@ const verificarStatus = async () => {
         setStatusVerificado(novoStatus);
         
     } catch (e) {
-        // ... (resto do tratamento de erro)
+        // resto do tratamento de erro
         console.error("Erro ao verificar status:", e);
         const msg = e.response && e.response.status === 404 
                     ? `Pedido ID ${pedidoConcluido} não encontrado (404).`
@@ -212,6 +210,7 @@ const verificarStatus = async () => {
 
     setError(null); 
   };
+  
   // Chamada do backend para a finalização do pedido
   const finalizarPedido = async () => {    
     const idUsuarioString = localStorage.getItem('id_usuario_logado');

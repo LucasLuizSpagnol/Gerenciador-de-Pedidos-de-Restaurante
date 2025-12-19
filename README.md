@@ -1,8 +1,15 @@
 # Gerenciador-de-Pedidos-de-Restaurante
-Sistema web usando React que imita um sistema de gerenciamento de pedidos de um restaurante
+Projeto web que tem como finaliade gerenciar os pedidos de um restarante.
 
+no terminal na pasta BACKEND rodar os seguintes comandos: 
+yarn install;
+yarn add sequelize;
+yarn add cors;
+yarn add bcryptjs;
+rode com nodemon serve.js;
 
+no FRONTEND agora executar os seguintes comandos:
+yarn install;
+yarn dev;
 
-para executar, instalar as dependências no backend com o camando "npm install"
-no front precisa executar "yarn install"
-
+a aplicação deve rodar 
